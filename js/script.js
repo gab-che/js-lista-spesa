@@ -13,8 +13,13 @@ const groceryList = [
     "superpoteri"
 ]
 
+const groceryUl = document.getElementById("grocery_list_ul");
+
 let x = 0;
 while (x < groceryList.length){
-    console.log("- ", groceryList[x]);
+    
+    const groceryItem = document.createElement("li");
+    groceryItem.innerHTML = groceryList[x];
+    groceryUl.append(groceryItem);
     x++;
 }
