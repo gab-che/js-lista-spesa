@@ -12,3 +12,9 @@ const groceryList = [
     "settimana enigmistica",
     "superpoteri"
 ]
+
+let x = 0;
+while (x < groceryList.length){
+    console.log("- ", groceryList[x]);
+    x++;
+}
